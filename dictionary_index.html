@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICTIONARY APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dictionary_style.css">
+</head>
+
+<!-- ========================  STRUCTURE OF CODE  ========================= -->
+<!-- 
+(1) header
+(1a)dcontainer
+(1ai)nav
+(1ai1)dlogo
+(1ai2)dcontent
+(1ai2a)select
+(1ai2b)label/c
+(1ai2c)i
+(1aii)form
+(2) Section/#
+(2a)dcontainer
+(2ai)ddictionary-content
+(2ai1)dsections
+(2ai2)i
+(2aii)dnoun
+(2aiii)dverb
+(2aiii1)dverb-content
+
+-->
+
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#" class="nav__logo">
+                        <i class="ri-book-3-line"></i>E-Book
+                    </a>
+                </div>
+                <div class="content">
+                    <select>
+                        <option value="sans-serif">Sans Serif</option>
+                        <option value="serif">Serif</option>
+                        <option value="monospace">Monospace</option>
+                    </select>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <i class="ri-moon-line moon-icon" id="theme-toggle-btn"></i>
+                </div>
+            </nav>
+            <form>
+                <input type="text" placeholder="Search the Word">
+                <i class="ri-search-line search__icon search"></i>
+            </form>
+        </div>
+    </header>
+    <section id="article">
+        <div class="container">
+            <div class="dictionary-content">
+                <div class="sections">
+                    <h2>Keyboard</h2>
+                    <p>/'ki:bɔ:d/</p>
+                </div>
+                <i class="ri-play-circle-fill play-Btn"></i>
+            </div>
+            <div class="noun">
+                <h3 class="part-of-speech">noun</h3>
+                <p>Meaning</p>
+                <ul class="meanings">
+                    <li>a panel of keys that operate a computer or typewriter.</li>
+                    <li>a set of keys on a piano or similar musical instrument.</li>
+                </ul>
+                <div class="syn">
+                    <p>Synonyms <span class="syn">electronic keyboard</span> </p>
+                </div>
+            </div>
+            <div class="verb">
+                <div class="verb-content">
+                    <h3>verb</h3>
+                    <p>Meaning</p>
+                    <ul class="meanings">
+                        <li>To type on a computer keyboard.</li>
+                        <li>"Keyboarding is the part of this job I hate the most."</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="dictionary_script.js"></script>
+</body>
+
+</html>
